@@ -5,45 +5,18 @@ import java.io.*;
 public class PracticeProblemTest {
 
    @Test
-   public void testOutput()
-   {
-     PrintStream originalOut = System.out;
-     ByteArrayOutputStream bos = new ByteArrayOutputStream();
-     System.setOut(new PrintStream(bos));
+   @DisplayName("")
+   void pluralizeTest1() {
+     Class<?> testClass = {CLASS_NAME}.class;
+     try {
+       cArg=[String.class]
+       Method method = testClass.getDeclaredMethod("pluralize", cArg);
+       assertEquals("ies", method.invoke(null, "fly"));
 
-     // action
-     PracticeProblem.q1();
-
-     // assertion
-     assertEquals("There once was a man from St. Ives.\n", bos.toString());
-
-     // undo the binding in System
-     System.setOut(originalOut);
    }
-
-   @Test
-   public void testInputandOutput()
-   {
-      String data = "Users Input";
-      System.setIn(new ByteArrayInputStream(data.getBytes()));
-      
-      PrintStream originalOut = System.out;
-      ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(bos));
-
-      // action
-      PracticeProblem.q1();
-
-      // assertion
-      assertEquals("There once was a man from St. Ives.\n", bos.toString());
-
-      // undo the binding in System
-      System.setOut(originalOut);
+   
+     catch (NoSuchMethodException e) {
+       fail("Method does not exist");
    }
-
-   @Test
-   public void testQ3()
-   {
-     
-   }
+}
 }
