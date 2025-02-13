@@ -1,7 +1,7 @@
 import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
-import java.io.*;
+
 public class PracticeProblemTest {
 @Test
 @DisplayName("")
@@ -17,6 +17,9 @@ void pluralizeTest1() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -34,6 +37,9 @@ void pluralizeTest2() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -49,6 +55,9 @@ void pluralizeTest3() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -66,6 +75,9 @@ void pluralizeTest4() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -81,6 +93,9 @@ void pluralizeTest5() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -98,6 +113,9 @@ void pluralizeTest6() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -113,6 +131,9 @@ void pluralizeTest7() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -130,6 +151,9 @@ void pluralizeTest8() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -145,6 +169,9 @@ void pluralizeTest9() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -162,6 +189,9 @@ void pluralizeTest10() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -178,21 +208,27 @@ void minTest1() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
 void minTest2() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {int.class, assertEquals(-3,.class, int.class};
+        Class[] cArg = {int.class, int.class, int.class};
         Method method = testClass.getDeclaredMethod("min", cArg);
   // Enter code here
-    assertEquals(-3, (assertEquals(-3,)method.invoke(null, 1, -3, 14));
+    assertEquals(-3, (int)method.invoke(null, 1, -3, 14));
 }
 
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -210,6 +246,9 @@ void minTest3() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -225,6 +264,9 @@ void isLeapYearTest1() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -242,6 +284,9 @@ void isLeapYearTest2() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -257,6 +302,9 @@ void isLeapYearTest3() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -274,6 +322,9 @@ void isLeapYearTest4() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -289,6 +340,9 @@ void isLeapYearTest5() {
 
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 @Test
@@ -306,6 +360,9 @@ void isLeapYearTest6() {
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
 }
+    catch(Exception e) {
+        fail("Something weird happened");
+}
 }
 @Test
 @DisplayName("")
@@ -316,11 +373,13 @@ void isLeapYearTest7() {
         Method method = testClass.getDeclaredMethod("isLeapYear", cArg);
   // Enter code here
     assertEquals(true, (boolean)method.invoke(null, 4));
-}
 
 }
     catch (NoSuchMethodException e) {
         fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
 }
 }
 }
