@@ -2,63 +2,78 @@
 class Notes {
 	public static void main(String[] args) {
 
-		//else if
+		//Else if
 
 		int num;
-		num = 9;
+		num = 11;
 
 		if (num > 10) { //num > 10
 			System.out.println("if");
 		}
-		else if (num > 8) { //num <= 10 && num > 8
+		else if (num > 8) {  //num > 8 && num <= 10
 			System.out.println("else if");
 		}
-			//could have more as many else ifs as i need
-		else { //num <= 10 && num <= 8
-		//num <= 8
+
+		else { //num <= 8
+			//num <= 10 && num <= 8
 			System.out.println("else");
 		}
+		
 
-		//DON'T DO THIS - UNREACHABLE ELSE IF
+		//
 
 		if (num > 10) { //num > 10
 			System.out.println("if");
 		}
-		else if (num > 12) { //CAN'T BE REACHED
-			// num <= 10 && num > 12
-			//all numbers less than 10 cannot be greater than 12
+		else if (num > 12) { //num > 12 && num <= 10
+			//UNREACHABLE ELSE IF STATEMENT
 			System.out.println("else if");
 		}
 			//could have more as many else ifs as i need
-		else { //num <= 10 && num <= 8
-		//num <= 8
+		else { //num <= 10 && num <= 12
 			System.out.println("else");
 		}
 
-		//try to order ifs and else ifs by smaller sets to larger sets (more specific to less specific)
+		//Try to order your ifs and else ifs smaller sets of data to larger ones
 
-		//nested ifs - putting and if inside an if
+
+		//nested ifs - putting an if inside an if
 
 		if (num > 8) {
 			System.out.println("first if statement ran");
-			if (num < 10) { //num > 8 && num < 10
+			if (num < 10) { //if num > 8 && num < 10
 				System.out.println("both ifs ran");
 			}
-			if (num == 15) { //num > 8 && num == 15
+			else if (num == 15) { //num == 15 && num > 8
 				System.out.println("num is 15");
 			}
-			if (num < 20) { //num > 8 && num < 20
-				System.out.println("3rd if is true");
+			else { // num >= 10 && num != 15 && num > 8
+				System.out.println("if and else ran");
 			}
 		}
 
-		//avoids repeated conditions
-		//helps created step by step checks
-		//allows code to written between conditions
+		//repeated condition - nest it
+		//Step by step checks
+		//code can be written between conditions
 
-		//avoid nested ifs when they aren't necessary
+		//Avoid over nested - makes code unreadable
 
-		//guard clauses can be used to avoid nested ifs.  look this up if you want to figure it out
+		// if () {
+		// 	if () {
+		// 		if () {
+		// 			if () {
+		// 				if () {
+		// 					if () {
+
+		// 					}
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		//Break into functions
+		//Guard clauses can be used to avoid nested ifs. look this up if you want to use it
 
 		
 	}
